@@ -6,7 +6,7 @@ class Program
     {
         // trying to use a class file
 
-   HouseListExample johnsonHomeList = new HouseListExample();
-    johnsonHomeList._blinds.Add(kitchen);
+        HouseListExample johnsonHomeList = new HouseListExample();
+        johnsonHomeList._blinds.Add(kitchen);
     }
 }

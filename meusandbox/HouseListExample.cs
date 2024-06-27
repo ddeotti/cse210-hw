@@ -1,5 +1,5 @@
-public class HouseListExample ()
+public class HouseListExample
 {
     public string _owner;
-    public List<Blind> _blinds = new List<Blind>();
+    public List<Blind>._blinds = new List<Blind>();
 }

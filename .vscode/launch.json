@@ -16,18 +16,6 @@
             "stopAtEntry": false
         },
   
-        {
-            "name": "meu sandbox",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build-sandbox-Sandbox",
-            "program": "${workspaceFolder}/meusandbox/bin/Debug/net8.0/meusandbox.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/meusandbox",
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "stopAtEntry": false
-        },
 
         {
             "name": "C# Prep 1",
