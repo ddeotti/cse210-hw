@@ -1,3 +1,16 @@
+/*
+ My attempt to exceed the requirements
+ was to format the output of the Journal entries 
+ on the Display() method of Entry Class.
+
+ Besides this, I cleared the screen and show
+ a message of "Press any key to continue" on
+ itens 2 to 4
+
+
+*/
+
+
 using System;
 using System.IO; 
 using System.Collections.Generic;
