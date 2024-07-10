@@ -16,6 +16,21 @@
             "stopAtEntry": false
         },
   
+     {
+            "name": "meusandbox",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-csharp-prep-Prep5",
+            "program": "${workspaceFolder}/csharp-prep/Prep5/bin/Debug/net8.0/Prep5.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/csharp-prep/Prep5",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+
+
+
 
         {
             "name": "C# Prep 1",
@@ -82,6 +97,8 @@
             "stopAtEntry": false
         },
 
+
+        
         {
             "name": "Learning 02 (Resume)",
             "type": "coreclr",
