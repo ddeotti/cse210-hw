@@ -1,3 +1,9 @@
+/*
+I added a function to generate random scriptures, the class name is ScriptureGenerator
+I also tried to follow the suggestion of classes from the Week03 Unit.
+I hope it is ok!
+*/
+
 using System;
 using System.Collections.Generic;
 
