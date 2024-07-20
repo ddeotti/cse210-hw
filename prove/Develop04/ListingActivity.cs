@@ -1,10 +1,12 @@
-public class ListingActivity:Activity
+public class ListingActivity
 {
     private int _count;
     private List<string> _prompts;
 
-    public ListingActivity()
+    public ListingActivity(int count, List<string> prompts)
     {
+        _count = count;
+        _prompts = prompts;
 
     }
 
@@ -14,11 +16,6 @@ public class ListingActivity:Activity
     }
 
     public void GetRandomPrompt()
-    {
-
-    }
-
-    public List<string> GetListFromUser()
     {
 
     }
