@@ -4,31 +4,29 @@ public class Activity
     private string _description;
     private int _duration;
 
-    // Activity constructor
-    public Activity(string name, string description, int duration)
+    public Activity(string name, string description)
     {
         _name = name;
         _description = description;
-        _duration = duration;
     }
 
-    public void DisplayStartingMessage()
+    protected void DisplayStartingMessage()
     {
-        Console.WriteLine($"Welcome to the {_name} activity");
+        Console.Clear();
+        Console.WriteLine($"===== Welcome to the {_name} activity =====");
+        Console.WriteLine();
         Console.WriteLine($"{_description}");
-        Thread.Sleep(500);
     }
 
-    public void DisplayEndingMessage()
+    protected void DisplayEndingMessage()
     {
         Console.WriteLine($"End of {_name} activity.");
         Console.WriteLine($"I hope you have enjoyed the {_name} activity.");
-        Thread.Sleep(1000);
     }
 
-    public void ShowSpinner(int seconds)
+    protected void ShowSpinner(int seconds)
     {
-        for (int i = 0; i <= seconds ; i++)
+        for (int i = 0; i < seconds; i++)
         {
             Console.Write("|");
             Thread.Sleep(200);
@@ -43,21 +41,29 @@ public class Activity
             Thread.Sleep(200);
             Console.Write("\b \b");
         }
-
     }
 
-    public void ShowCountDown(int seconds)
+    protected void ShowCountDown(int seconds)
     {
-        for (int i = seconds;i >= 0;i--)
+        for (int i = seconds; i > 0; i--)
         {
-            Console.Write($"{i}");
+            Console.Write($"{i} ");
             Thread.Sleep(1000);
-            Console.Write("\b \b");
+            Console.Write("\b\b\b\b");
         }
+        Console.WriteLine("Go!");
     }
 
-    public int UserInputTime(int seconds)
+    protected void UserInputTime()
     {
-        
+        Console.WriteLine();
+        Console.Write("How long would you like for your session? ");
+        Duration = int.Parse(Console.ReadLine());
+    }
+
+    public int Duration
+    {
+        get { return _duration; }
+        set { _duration = value; }
     }
 }
