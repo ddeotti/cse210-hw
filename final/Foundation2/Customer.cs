@@ -1,4 +1,3 @@
-/**/
 public class Customer
 {
     private string _name;
@@ -18,5 +17,10 @@ public class Customer
     public Address Address
     {
         get { return _address; }
+    }
+
+    public bool IsLivingInUSA()
+    {
+        return _address.IsLivingInUSA();
     }
 }

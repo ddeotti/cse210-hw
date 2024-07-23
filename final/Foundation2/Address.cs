@@ -1,6 +1,3 @@
-/*
-
-*/
 public class Address
 {
     private string _street;
@@ -14,6 +11,11 @@ public class Address
         _city = city;
         _state = state;
         _country = country;
+    }
+
+    public string CompleteAddress()
+    {
+        return $"{_street}, {_city}, {_state}, {_country}";
     }
 
     public bool IsLivingInUSA()

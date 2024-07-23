@@ -1,4 +1,5 @@
-/**/
+using System.Collections.Generic;
+
 public class Order
 {
     private List<Product> _products;
