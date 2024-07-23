@@ -24,3 +24,6 @@ public class Customer
         return _address.IsLivingInUSA();
     }
 }
+
+
+
