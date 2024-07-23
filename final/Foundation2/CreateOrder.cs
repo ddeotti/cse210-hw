@@ -9,8 +9,8 @@ public class CreateOrder
     {
 
         Product product1 = new Product("Samsung Television", "STV123", 1200.50, 1);
-        Product product2 = new Product("Universal Remote", "URE456", 25.99, 2);
-        Product product3 = new Product("TV Keyboard", "KYB789", 45.99, 1); 
+        Product product2 = new Product("Universal Remote", "MSE456", 25.99, 2);
+        Product product3 = new Product("Keyboard", "KYB789", 45.99, 1); 
 
         Address address1 = new Address("7817 Some St.Middletown", "New York ", "NY", "USA");
         Address address2 = new Address("123 Avenida Brasil", "Campinas", "SP", "Brasil");
