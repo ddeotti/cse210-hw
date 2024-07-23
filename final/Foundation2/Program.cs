@@ -2,8 +2,10 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello Foundation2 World!");
-    }
+        Console.Clear();
+        CreateOrder orderExample = new CreateOrder();
+        orderExample.Create(); 
+    } 
 }
