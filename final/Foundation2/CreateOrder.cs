@@ -8,15 +8,15 @@ public class CreateOrder
     public void Create()
     {
 
-        Product product1 = new Product("Laptop", "LPT123", 1200.50m, 1);
-        Product product2 = new Product("Mouse", "MSE456", 25.99m, 2);
-        Product product3 = new Product("Keyboard", "KYB789", 45.99m, 1);
+        Product product1 = new Product("Samsung Television", "STV123", 1200.50, 1);
+        Product product2 = new Product("Universal Remote", "URE456", 25.99, 2);
+        Product product3 = new Product("TV Keyboard", "KYB789", 45.99, 1); 
 
-        Address address1 = new Address("123 Main St", "Anytown", "CA", "USA");
-        Address address2 = new Address("456 Maple Ave", "Othertown", "ON", "Canada");
+        Address address1 = new Address("7817 Some St.Middletown", "New York ", "NY", "USA");
+        Address address2 = new Address("123 Avenida Brasil", "Campinas", "SP", "Brasil");
 
-        Customer customer1 = new Customer("John Doe", address1);
-        Customer customer2 = new Customer("Jane Smith", address2);
+        Customer customer1 = new Customer("John Peter Paul", address1);
+        Customer customer2 = new Customer("Jose Pedro Paulo", address2);
 
         Order order1 = new Order(customer1);
         order1.AddProduct(product1);

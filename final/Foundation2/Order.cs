@@ -14,9 +14,9 @@ public class Order
         _products.Add(product);
     }
 
-    public decimal TotalCost()
+    public double TotalCost()
     {
-        decimal total = 0;
+        double total = 0;
         foreach (var product in _products)
         {
             total += product.TotalCost();
@@ -41,4 +41,3 @@ public class Order
         return $"{_customer.Name}\n{_customer.Address.CompleteAddress()}";
     }
 }
-
