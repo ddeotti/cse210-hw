@@ -1,6 +1,3 @@
-/*
-
-*/
 public class CreateOrder
 {
     public CreateOrder()
