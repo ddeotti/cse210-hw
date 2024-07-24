@@ -15,10 +15,10 @@ public class Program
         OutdoorGathering outdoorGathering = new OutdoorGathering("Birthday of uncle John", "A happy time for our family", "2024-11-30", "15:00", address3, "Sunny");
 
         Console.WriteLine("\n ##### Lecture example #####\n");
-        Console.WriteLine(lecture.StandardDetails() + "\n" + lecture.FullDetails() + "\n" + lecture.ShortDetails() + "\n");
+        Console.WriteLine(lecture.GetLectureStandardDetails() + "\n" + lecture.GetLectureFullDetails() + "\n" + lecture.GetLectureShortDetails() + "\n");
         Console.WriteLine("\n ##### Reception example #####\n");
-        Console.WriteLine(reception.StandardDetails() + "\n" + reception.FullDetails() + "\n" + reception.ShortDetails() + "\n");
+        Console.WriteLine(reception.GetReceptionStandardDetails() + "\n" + reception.GetReceptionFullDetails() + "\n" + reception.GetReceptionShortDetails() + "\n");
         Console.WriteLine("\n ##### Outdoor Gathering example #####\n");
-        Console.WriteLine(outdoorGathering.StandardDetails() + "\n" + outdoorGathering.FullDetails() + "\n" +outdoorGathering.ShortDetails() + "\n");
+        Console.WriteLine(outdoorGathering.GetOutdoorGatheringStandardDetails() + "\n" + outdoorGathering.GetOutdoorGatheringFullDetails() + "\n" +outdoorGathering.GetOutdoorGatheringShortDetails() + "\n");
     }
 }

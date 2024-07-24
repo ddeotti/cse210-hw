@@ -8,18 +8,18 @@ public class OutdoorGathering : Event
         _weatherForecast = weatherForecast;
     }
 
-    public override string StandardDetails()
+    public string GetOutdoorGatheringStandardDetails()
     {
-        return base.StandardDetails();
+        return GetStandardDetails();
     }
 
-    public override string ShortDetails()
+    public string GetOutdoorGatheringShortDetails()
     {
-        return $"{this.GetType().Name} - {_title} - {_date}";
+        return GetShortDetails();
     }
 
-    public string FullDetails()
+    public string GetOutdoorGatheringFullDetails()
     {
-        return $"{StandardDetails()}\nWeather Forecast: {_weatherForecast}";
+        return $"{GetStandardDetails()}\nWeather Forecast: {_weatherForecast}";
     }
 }

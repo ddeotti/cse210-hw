@@ -8,18 +8,18 @@ public class Reception : Event
         _email = email;
     }
 
-    public override string StandardDetails()
+    public string GetReceptionStandardDetails()
     {
-        return base.StandardDetails();
+        return GetStandardDetails();
     }
 
-    public override string ShortDetails()
+    public string GetReceptionShortDetails()
     {
-        return $"{this.GetType().Name} - {_title} - {_date}";
+        return GetShortDetails();
     }
 
-    public string FullDetails()
+    public string GetReceptionFullDetails()
     {
-        return $"{StandardDetails()}\nRSVP Email: {_email}";
+        return $"{GetStandardDetails()}\nRSVP Email: {_email}";
     }
 }

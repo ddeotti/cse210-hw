@@ -10,18 +10,18 @@ public class Lecture : Event
         _capacity = capacity;
     }
 
-    public override string StandardDetails()
+    public string GetLectureStandardDetails()
     {
-        return base.StandardDetails();
+        return GetStandardDetails();
     }
 
-    public override string ShortDetails()
+    public string GetLectureShortDetails()
     {
-        return $"{this.GetType().Name} - {_title} - {_date}";
+        return GetShortDetails();
     }
 
-    public string FullDetails()
+    public string GetLectureFullDetails()
     {
-        return $"{StandardDetails()}\nSpeaker: {_speaker}\nCapacity: {_capacity}";
+        return $"{GetStandardDetails()}\nSpeaker: {_speaker}\nCapacity: {_capacity}";
     }
 }
