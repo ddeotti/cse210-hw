@@ -1,7 +1,7 @@
 public abstract class Activity
 {
-    private DateTime date;
-    private int minutes;
+    private DateTime _date;
+    private int _minutes;
 
     public Activity(DateTime date, int minutes)
     {
@@ -11,22 +11,22 @@ public abstract class Activity
 
     protected DateTime GetDate()
     {
-        return date;
+        return _date;
     }
 
     private void SetDate(DateTime value)
     {
-        date = value;
+        _date = value;
     }
 
     protected int GetMinutes()
     {
-        return minutes;
+        return _minutes;
     }
 
     private void SetMinutes(int value)
     {
-        minutes = value;
+        _minutes = value;
     }
 
     public virtual double GetDistance()
@@ -46,8 +46,6 @@ public abstract class Activity
 
     public string GetSummary()
     {
-
-        
         return $"{GetDate().ToString("dd MMM yyyy")} {GetType().Name} ({GetMinutes()} min): Distance {GetDistance():0.0} miles, Speed {GetSpeed():0.0} mph, Pace: {GetPace():0.0} min per mile";
     }
 }

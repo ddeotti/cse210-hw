@@ -1,15 +1,15 @@
 public class Cycling : Activity
 {
-    private double speed;
+    private double _speed;
 
     public Cycling(DateTime date, int minutes, double speed) : base(date, minutes)
     {
         SetSpeed(speed);
     }
 
-       private void SetSpeed(double value)
+    private void SetSpeed(double value)
     {
-        speed = value;
+        _speed = value;
     }
 
     public override double GetDistance()
@@ -19,7 +19,7 @@ public class Cycling : Activity
 
     public override double GetSpeed()
     {
-        return speed; // Return the speed directly
+        return _speed; // Return the speed directly
     }
 
     public override double GetPace()

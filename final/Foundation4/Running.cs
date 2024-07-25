@@ -1,20 +1,20 @@
 public class Running : Activity
 {
-    private double distance;
+    private double _distance;
 
     public Running(DateTime date, int minutes, double distance) : base(date, minutes)
     {
         SetDistance(distance);
     }
 
-     private void SetDistance(double value)
+    private void SetDistance(double value)
     {
-        distance = value;
+        _distance = value;
     }
 
     public override double GetDistance()
     {
-        return distance; // Return the distance directly
+        return _distance; // Return the distance directly
     }
 
     public override double GetSpeed()
