@@ -1,4 +1,4 @@
-   public class ChecklistGoal : Goal
+public class ChecklistGoal : Goal
 {
     private int _amountCompleted;
     private int _target;
@@ -20,7 +20,7 @@
             int earnedPoints = Points;
             if (_amountCompleted == _target)
             {
-                earnedPoints += _bonus; // Bônus ao completar todos os passos
+                earnedPoints += _bonus; 
                 Console.WriteLine($"Congratulations! You have completed the goal '{ShortName}' and earned an extra bonus of {_bonus} points!");
             }
             Console.WriteLine($"Event recorded for checklist goal '{ShortName}'. You earned {earnedPoints} points.");
@@ -46,4 +46,3 @@
         return $"ChecklistGoal,{ShortName},{Description},{Points},{_target},{_bonus},{_amountCompleted}";
     }
 }
- 

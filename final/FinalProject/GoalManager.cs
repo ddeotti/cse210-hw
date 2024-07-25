@@ -16,7 +16,12 @@ public class GoalManager
 
     public void DisplayPlayerInfo()
     {
-        Console.WriteLine($"Total Score: {_score}");
+        Console.WriteLine("**********************************");
+        Console.WriteLine("*         ETERNAL QUEST          *");
+        Console.WriteLine("**********************************");
+        Console.WriteLine($"*      Total Score: {_score}            *");
+        Console.WriteLine("**********************************");
+        Console.WriteLine();
     }
 
     public void ListGoalNames()
@@ -24,7 +29,7 @@ public class GoalManager
         for (int i = 0; i < _goals.Count; i++)
         {
             var goal = _goals[i];
-            string status = goal.IsComplete() ? "[ X ]" : "[ ]";
+            string status = goal.IsComplete() ? "[ X ]" : "[  ]";
             Console.WriteLine($"{i + 1}. {goal.ShortName} {status}");
         }
     }
@@ -41,6 +46,7 @@ public class GoalManager
 
     public void CreateGoal()
     {
+        Console.Write("\n\n\n");
         Console.WriteLine("The types of Goal are:");
         Console.WriteLine("1. Simple Goal");
         Console.WriteLine("2. Eternal Goal");
@@ -48,6 +54,7 @@ public class GoalManager
         Console.Write("Which type of goal would you like to create? ");
         string choice = Console.ReadLine();
 
+        Console.Write("\n\n\n");
         Console.Write("What is the name of your goal?: ");
         string name = Console.ReadLine();
         Console.Write("What is a short description of it? ");
@@ -64,6 +71,7 @@ public class GoalManager
                 _goals.Add(new EternalGoal(name, description, points));
                 break;
             case "3":
+                Console.Write("\n\n\n");
                 Console.Write("What is the amount of points associated with this goal? ");
                 int bonus = int.Parse(Console.ReadLine());
 
@@ -79,6 +87,7 @@ public class GoalManager
 
     public void RecordEvent()
     {
+        Console.Write("\n\n\n");
         Console.Write("Enter goal name to record event: ");
         string goalName = Console.ReadLine();
 
@@ -96,6 +105,7 @@ public class GoalManager
 
     public void SaveGoals()
     {
+        Console.Write("\n\n\n");
         Console.Write("Enter filename to save goals: ");
         string fileName = Console.ReadLine();
 
@@ -112,6 +122,7 @@ public class GoalManager
 
     public void LoadGoals()
     {
+        Console.Write("\n\n\n");
         Console.Write("Enter filename to load goals: ");
         string fileName = Console.ReadLine();
 
@@ -155,7 +166,6 @@ public class GoalManager
                     break;
             }
         }
-        Console.WriteLine("Data loaded.");
+        Console.WriteLine("Goals loaded.");
     }
 }
- 
